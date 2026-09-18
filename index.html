@@ -8,41 +8,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Source Sans 3', serif; background-color: #fcf8f2; color: #1c1917; }
+        body { font-family: 'Source Sans 3', serif; background-color: #f7f4ee; color: #1c1917; }
         h1, h2, h3, h4, .font-serif-title { font-family: 'Cinzel', serif; }
         .font-sub { font-family: 'Playfair Display', serif; }
-        .vintage-border { border: 2px solid #78350f; outline: 1px solid #b45309; outline-offset: 3px; }
-        .vintage-card { background: #fdfbf7; border: 1px solid #d97706; box-shadow: 4px 4px 0px #78350f; }
+        .vintage-card { background: #fcfbfa; border: 2px solid #581c87; box-shadow: 4px 4px 0px #3b0764; }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col">
 
     <!-- Top Compliance Banner -->
-    <div class="bg-amber-950 text-amber-100 border-b border-amber-800 text-xs sm:text-sm py-2 px-4 text-center tracking-wide">
-        Official Domain: <code class="bg-amber-900 text-amber-200 border border-amber-700 px-2 py-0.5 rounded font-mono">oghsfbc.bond</code> | Operated by <strong class="text-white">Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629)
+    <div class="bg-stone-900 text-amber-200 border-b border-amber-800 text-xs sm:text-sm py-2 px-4 text-center tracking-wide">
+        Official Domain: <code class="bg-stone-950 text-amber-300 border border-amber-700/60 px-2 py-0.5 rounded font-mono">oghsfbc.bond</code> | Operated by <strong class="text-white">Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629)
     </div>
 
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 bg-[#fcf8f2]/95 backdrop-blur-md border-b-2 border-amber-900/30">
+    <header class="sticky top-0 z-40 bg-[#f7f4ee]/95 backdrop-blur-md border-b-2 border-amber-900/40">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 font-extrabold text-xl tracking-wider text-amber-950">
-                <div class="w-12 h-12 rounded-full bg-amber-900 border-2 border-amber-600 flex items-center justify-center text-amber-100 shadow-md font-serif-title text-xl">
+                <div class="w-12 h-12 rounded-full bg-amber-950 border-2 border-amber-500 flex items-center justify-center text-amber-200 shadow-md font-serif-title text-xl">
                     OG
                 </div>
                 <div>
-                    <span class="block font-serif-title text-lg leading-none">Orange Glen High</span>
-                    <span class="text-xs uppercase tracking-widest text-amber-800 font-bold">Football Booster Club</span>
+                    <span class="block font-serif-title text-lg leading-none text-stone-900">Orange Glen High</span>
+                    <span class="text-xs uppercase tracking-widest text-amber-900 font-bold">Football Booster Club</span>
                 </div>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-wider text-amber-900">
-                <a href="#about" class="hover:text-amber-600 transition">About</a>
-                <a href="#programs" class="hover:text-amber-600 transition">Programs</a>
-                <a href="#approach" class="hover:text-amber-600 transition">Approach</a>
-                <a href="#impact" class="hover:text-amber-600 transition">Impact</a>
-                <button onclick="openModal('privacyModal')" class="hover:text-amber-600 transition">Privacy</button>
-                <button onclick="openModal('termsModal')" class="hover:text-amber-600 transition">Terms</button>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-wider text-stone-900">
+                <a href="#about" class="hover:text-amber-800 transition">About</a>
+                <a href="#programs" class="hover:text-amber-800 transition">Programs</a>
+                <a href="#approach" class="hover:text-amber-800 transition">Approach</a>
+                <a href="#impact" class="hover:text-amber-800 transition">Impact</a>
+                <button onclick="openModal('privacyModal')" class="hover:text-amber-800 transition">Privacy</button>
+                <button onclick="openModal('termsModal')" class="hover:text-amber-800 transition">Terms</button>
             </nav>
-            <a href="#contact" class="hidden sm:inline-flex bg-amber-900 hover:bg-amber-800 text-amber-100 text-xs font-bold uppercase tracking-widest px-6 py-3 border border-amber-600 shadow-[3px_3px_0px_#78350f] transition">Get Involved</a>
+            <a href="#contact" class="hidden sm:inline-flex bg-amber-950 hover:bg-stone-800 text-amber-200 text-xs font-bold uppercase tracking-widest px-6 py-3 border border-amber-600 shadow-[3px_3px_0px_#451a03] transition">Get Involved</a>
         </div>
     </header>
 
@@ -50,51 +49,51 @@
         <!-- Hero Section -->
         <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="text-xs uppercase tracking-widest font-bold text-amber-800 bg-amber-100 border border-amber-300 px-3 py-1 rounded-full">Est. Escondido, CA</span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-amber-950 tracking-tight leading-tight mt-4">
-                    Building Champions <span class="italic font-sub text-amber-800 block">On & Off the Gridiron</span>
+                <span class="text-xs uppercase tracking-widest font-bold text-amber-900 bg-amber-100 border border-amber-300 px-3 py-1 rounded-full">Est. Escondido, CA</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-4">
+                    Building Champions <span class="italic font-sub text-amber-900 block">On & Off the Gridiron</span>
                 </h1>
                 <p class="mt-6 text-lg text-stone-700 leading-relaxed">
                     Supporting Patriot football players at Orange Glen High School through certified safety equipment, essential pre-game nutrition, team travel grants, and academic support.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-4">
-                    <a href="#programs" class="bg-amber-900 hover:bg-amber-800 text-amber-100 font-bold uppercase tracking-wider text-xs px-8 py-4 border border-amber-600 shadow-[4px_4px_0px_#78350f] transition">Explore Programs</a>
-                    <a href="#contact" class="bg-amber-100 hover:bg-amber-200 text-amber-950 font-bold uppercase tracking-wider text-xs px-8 py-4 border border-amber-800 shadow-[4px_4px_0px_#78350f] transition">Contact Us</a>
+                    <a href="#programs" class="bg-amber-950 hover:bg-stone-800 text-amber-200 font-bold uppercase tracking-wider text-xs px-8 py-4 border border-amber-600 shadow-[4px_4px_0px_#451a03] transition">Explore Programs</a>
+                    <a href="#contact" class="bg-amber-100 hover:bg-amber-200 text-stone-950 font-bold uppercase tracking-wider text-xs px-8 py-4 border border-stone-800 shadow-[4px_4px_0px_#1c1917] transition">Contact Us</a>
                 </div>
             </div>
 
-            <!-- Guaranteed Render SVG Visual Grid (No Broken Images) -->
+            <!-- Guaranteed Render SVG Visual Grid -->
             <div class="grid grid-cols-2 gap-4">
-                <div class="vintage-card p-6 flex flex-col items-center justify-center text-center h-48">
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-6 flex flex-col items-center justify-center text-center h-48 shadow-[4px_4px_0px_#451a03]">
                     <svg class="w-16 h-16 text-amber-900 mb-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                     </svg>
-                    <span class="font-serif-title font-bold text-amber-950 text-sm">Patriot Pride</span>
+                    <span class="font-serif-title font-bold text-stone-900 text-sm">Patriot Pride</span>
                 </div>
-                <div class="vintage-card p-6 flex flex-col items-center justify-center text-center h-48">
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-6 flex flex-col items-center justify-center text-center h-48 shadow-[4px_4px_0px_#451a03]">
                     <svg class="w-16 h-16 text-amber-900 mb-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
                     </svg>
-                    <span class="font-serif-title font-bold text-amber-950 text-sm">Safety First</span>
+                    <span class="font-serif-title font-bold text-stone-900 text-sm">Safety First</span>
                 </div>
-                <div class="vintage-card p-6 flex flex-col items-center justify-center text-center h-48">
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-6 flex flex-col items-center justify-center text-center h-48 shadow-[4px_4px_0px_#451a03]">
                     <svg class="w-16 h-16 text-amber-900 mb-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
                     </svg>
-                    <span class="font-serif-title font-bold text-amber-950 text-sm">Academic Support</span>
+                    <span class="font-serif-title font-bold text-stone-900 text-sm">Academic Support</span>
                 </div>
-                <div class="vintage-card p-6 flex flex-col items-center justify-center text-center h-48">
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-6 flex flex-col items-center justify-center text-center h-48 shadow-[4px_4px_0px_#451a03]">
                     <svg class="w-16 h-16 text-amber-900 mb-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
                     </svg>
-                    <span class="font-serif-title font-bold text-amber-950 text-sm">Community Unity</span>
+                    <span class="font-serif-title font-bold text-stone-900 text-sm">Community Unity</span>
                 </div>
             </div>
         </section>
 
         <!-- Verification Banner -->
         <section class="max-w-7xl mx-auto px-6 mb-16">
-            <div class="bg-amber-100 border-2 border-amber-800 p-6 rounded-none shadow-[4px_4px_0px_#78350f]">
+            <div class="bg-amber-100/80 border-2 border-amber-900 p-6 rounded-none shadow-[4px_4px_0px_#451a03]">
                 <h3 class="text-lg font-serif-title font-bold text-amber-950">Organization Domain Verification Notice</h3>
                 <p class="mt-2 text-stone-800 text-sm leading-relaxed">
                     <strong>Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629) confirms that <strong>oghsfbc.bond</strong> serves as our official website domain. All official communications and Workspace accounts are managed under <code class="text-amber-900 font-bold">query@oghsfbc.bond</code>.
@@ -105,49 +104,49 @@
         <!-- About Section -->
         <section id="about" class="max-w-7xl mx-auto px-6 py-16">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-amber-950">Our Core Mission</h2>
-                <div class="w-24 h-1 bg-amber-800 mx-auto my-3"></div>
+                <h2 class="text-3xl font-extrabold text-stone-900">Our Core Mission</h2>
+                <div class="w-24 h-1 bg-amber-900 mx-auto my-3"></div>
                 <p class="text-stone-700 italic font-sub">Empowering Patriot student-athletes through athletic opportunity, player safety, and community pride.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="vintage-card p-8">
-                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-800 pb-2">Our Mission</h3>
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-8 shadow-[4px_4px_0px_#451a03]">
+                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-900 pb-2">Our Mission</h3>
                     <p class="text-stone-700 text-sm leading-relaxed">To directly support the Orange Glen High School football program by providing safety equipment, pre-game nutrition, and academic enrichment opportunities.</p>
                 </div>
-                <div class="vintage-card p-8">
-                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-800 pb-2">Our Vision</h3>
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-8 shadow-[4px_4px_0px_#451a03]">
+                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-900 pb-2">Our Vision</h3>
                     <p class="text-stone-700 text-sm leading-relaxed">A sports environment in Escondido where financial obstacles never stop a student-athlete from competing, learning leadership, and achieving success.</p>
                 </div>
-                <div class="vintage-card p-8">
-                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-800 pb-2">Core Values</h3>
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-8 shadow-[4px_4px_0px_#451a03]">
+                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-3 border-b-2 border-amber-900 pb-2">Core Values</h3>
                     <p class="text-stone-700 text-sm leading-relaxed">Player health & safety, character development, transparent financial accountability, and fostering lifelong sportsmanship.</p>
                 </div>
             </div>
         </section>
 
         <!-- Programs Section -->
-        <section id="programs" class="bg-amber-950 text-amber-100 border-y-2 border-amber-800 py-20">
+        <section id="programs" class="bg-stone-900 text-amber-100 border-y-2 border-amber-800 py-20">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto mb-16">
                     <h2 class="text-3xl font-extrabold text-amber-100">Booster Club Programs</h2>
                     <div class="w-24 h-1 bg-amber-600 mx-auto my-3"></div>
-                    <p class="text-amber-300 font-sub italic">Direct funding and volunteer support aimed at giving our players the tools they need to succeed.</p>
+                    <p class="text-amber-200 font-sub italic">Direct funding and volunteer support aimed at giving our players the tools they need to succeed.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-amber-900 border border-amber-700 p-8 shadow-[4px_4px_0px_#451a03]">
-                        <div class="w-12 h-12 bg-amber-800 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🛡️</div>
+                    <div class="bg-stone-950 border border-amber-800 p-8 shadow-[4px_4px_0px_#78350f]">
+                        <div class="w-12 h-12 bg-amber-950 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🛡️</div>
                         <h3 class="text-xl font-serif-title font-bold text-amber-100">Helmet & Safety Grants</h3>
-                        <p class="mt-2 text-amber-200/80 text-sm leading-relaxed">Purchasing, testing, and upgrading football helmets, shoulder pads, and modern protective equipment for all roster levels.</p>
+                        <p class="mt-2 text-stone-300 text-sm leading-relaxed">Purchasing, testing, and upgrading football helmets, shoulder pads, and modern protective equipment for all roster levels.</p>
                     </div>
-                    <div class="bg-amber-900 border border-amber-700 p-8 shadow-[4px_4px_0px_#451a03]">
-                        <div class="w-12 h-12 bg-amber-800 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🍎</div>
+                    <div class="bg-stone-950 border border-amber-800 p-8 shadow-[4px_4px_0px_#78350f]">
+                        <div class="w-12 h-12 bg-amber-950 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🍎</div>
                         <h3 class="text-xl font-serif-title font-bold text-amber-100">Game-Day Meals & Hydration</h3>
-                        <p class="mt-2 text-amber-200/80 text-sm leading-relaxed">Providing pre-game meals, hydration stations, and healthy recovery snacks for home and away athletic trips.</p>
+                        <p class="mt-2 text-stone-300 text-sm leading-relaxed">Providing pre-game meals, hydration stations, and healthy recovery snacks for home and away athletic trips.</p>
                     </div>
-                    <div class="bg-amber-900 border border-amber-700 p-8 shadow-[4px_4px_0px_#451a03]">
-                        <div class="w-12 h-12 bg-amber-800 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🎓</div>
+                    <div class="bg-stone-950 border border-amber-800 p-8 shadow-[4px_4px_0px_#78350f]">
+                        <div class="w-12 h-12 bg-amber-950 border border-amber-600 flex items-center justify-center font-bold text-xl mb-4 text-amber-200">🎓</div>
                         <h3 class="text-xl font-serif-title font-bold text-amber-100">Academic Support & Stipends</h3>
-                        <p class="mt-2 text-amber-200/80 text-sm leading-relaxed">Supporting study sessions, summer athletic camp assistance, and annual scholarship stipends for graduating senior players.</p>
+                        <p class="mt-2 text-stone-300 text-sm leading-relaxed">Supporting study sessions, summer athletic camp assistance, and annual scholarship stipends for graduating senior players.</p>
                     </div>
                 </div>
             </div>
@@ -156,43 +155,43 @@
         <!-- Contact Section -->
         <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-amber-950">Contact Our Board</h2>
-                <div class="w-24 h-1 bg-amber-800 mx-auto my-3"></div>
+                <h2 class="text-3xl font-extrabold text-stone-900">Contact Our Board</h2>
+                <div class="w-24 h-1 bg-amber-900 mx-auto my-3"></div>
                 <p class="text-stone-700 italic font-sub">Get in touch for sponsorship opportunities, volunteer sign-ups, or general inquiries.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="vintage-card p-8">
-                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-6 border-b-2 border-amber-800 pb-2">Organization Details</h3>
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-8 shadow-[4px_4px_0px_#451a03]">
+                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-6 border-b-2 border-amber-900 pb-2">Organization Details</h3>
                     <div class="space-y-4 text-sm">
                         <div>
-                            <span class="text-xs uppercase tracking-wider text-amber-800 block font-bold">Legal Organization Name</span>
+                            <span class="text-xs uppercase tracking-wider text-amber-900 block font-bold">Legal Organization Name</span>
                             <strong class="text-stone-900">ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB</strong>
                         </div>
                         <div>
-                            <span class="text-xs uppercase tracking-wider text-amber-800 block font-bold">Tax Identification Number (EIN)</span>
+                            <span class="text-xs uppercase tracking-wider text-amber-900 block font-bold">Tax Identification Number (EIN)</span>
                             <strong class="text-stone-900">81-2112629</strong>
                         </div>
                         <div>
-                            <span class="text-xs uppercase tracking-wider text-amber-800 block font-bold">Official Email Address</span>
+                            <span class="text-xs uppercase tracking-wider text-amber-900 block font-bold">Official Email Address</span>
                             <a href="mailto:query@oghsfbc.bond" class="text-amber-900 hover:underline font-bold">query@oghsfbc.bond</a>
                         </div>
                         <div>
-                            <span class="text-xs uppercase tracking-wider text-amber-800 block font-bold">Official Web Domain</span>
+                            <span class="text-xs uppercase tracking-wider text-amber-900 block font-bold">Official Web Domain</span>
                             <a href="https://oghsfbc.bond" class="text-amber-900 hover:underline font-bold">oghsfbc.bond</a>
                         </div>
                         <div>
-                            <span class="text-xs uppercase tracking-wider text-amber-800 block font-bold">Mailing Address</span>
+                            <span class="text-xs uppercase tracking-wider text-amber-900 block font-bold">Mailing Address</span>
                             <strong class="text-stone-900">151 E Pennsylvania Ave, Escondido, CA 92025</strong>
                         </div>
                     </div>
                 </div>
-                <div class="vintage-card p-8">
-                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-6 border-b-2 border-amber-800 pb-2">Send Us a Message</h3>
+                <div class="bg-[#fcfbfa] border-2 border-amber-950 p-8 shadow-[4px_4px_0px_#451a03]">
+                    <h3 class="text-xl font-serif-title font-bold text-amber-950 mb-6 border-b-2 border-amber-900 pb-2">Send Us a Message</h3>
                     <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your message has been routed to query@oghsfbc.bond');">
-                        <input type="text" placeholder="Full Name" required class="w-full px-4 py-3 bg-amber-50/50 border border-amber-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
-                        <input type="email" placeholder="Email Address" required class="w-full px-4 py-3 bg-amber-50/50 border border-amber-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
-                        <textarea rows="4" placeholder="How can the Booster Club assist you?" required class="w-full px-4 py-3 bg-amber-50/50 border border-amber-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-800 transition"></textarea>
-                        <button type="submit" class="w-full bg-amber-900 hover:bg-amber-800 text-amber-100 font-bold uppercase tracking-wider text-xs py-4 border border-amber-600 shadow-[3px_3px_0px_#78350f] transition">Submit Message</button>
+                        <input type="text" placeholder="Full Name" required class="w-full px-4 py-3 bg-amber-50/50 border border-stone-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-900 transition">
+                        <input type="email" placeholder="Email Address" required class="w-full px-4 py-3 bg-amber-50/50 border border-stone-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-900 transition">
+                        <textarea rows="4" placeholder="How can the Booster Club assist you?" required class="w-full px-4 py-3 bg-amber-50/50 border border-stone-800 text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-900 transition"></textarea>
+                        <button type="submit" class="w-full bg-amber-950 hover:bg-stone-800 text-amber-200 font-bold uppercase tracking-wider text-xs py-4 border border-amber-600 shadow-[3px_3px_0px_#451a03] transition">Submit Message</button>
                     </form>
                 </div>
             </div>
@@ -200,15 +199,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-amber-950 border-t-2 border-amber-800 text-amber-200/80 py-12 text-sm">
+    <footer class="bg-stone-950 border-t-2 border-amber-800 text-stone-400 py-12 text-sm">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2">
-                <h3 class="text-amber-100 font-serif-title text-lg mb-3">OGHS Football Booster Club</h3>
-                <p class="max-w-sm text-amber-200/70 leading-relaxed">Dedicated to supporting high school student-athletes in Escondido, CA through gear funding, game-day nutrition, athletic safety, and academic support.</p>
+                <h3 class="text-amber-200 font-serif-title text-lg mb-3">OGHS Football Booster Club</h3>
+                <p class="max-w-sm text-stone-300 leading-relaxed">Dedicated to supporting high school student-athletes in Escondido, CA through gear funding, game-day nutrition, athletic safety, and academic support.</p>
                 <p class="mt-4 text-xs text-amber-400"><strong>EIN:</strong> 81-2112629 | <strong>Domain:</strong> oghsfbc.bond</p>
             </div>
             <div>
-                <h4 class="text-amber-100 font-bold uppercase text-xs tracking-widest mb-3">Policies</h4>
+                <h4 class="text-amber-200 font-bold uppercase text-xs tracking-widest mb-3">Policies</h4>
                 <ul class="space-y-2">
                     <li><button onclick="openModal('privacyModal')" class="hover:text-amber-100 transition">Privacy Policy</button></li>
                     <li><button onclick="openModal('termsModal')" class="hover:text-amber-100 transition">Terms of Use</button></li>
@@ -216,58 +215,120 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-amber-100 font-bold uppercase text-xs tracking-widest mb-3">Contact</h4>
+                <h4 class="text-amber-200 font-bold uppercase text-xs tracking-widest mb-3">Contact</h4>
                 <p>151 E Pennsylvania Ave</p>
                 <p>Escondido, CA 92025</p>
                 <p class="mt-2"><a href="mailto:query@oghsfbc.bond" class="text-amber-300 hover:underline">query@oghsfbc.bond</a></p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-amber-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-amber-400">
+        <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-amber-400">
             <div>&copy; 2026 Orange Glen High School Football Booster Club. All rights reserved.</div>
             <div>Official Domain: <code>oghsfbc.bond</code></div>
         </div>
     </footer>
 
-    <!-- MODAL 1: PRIVACY POLICY -->
-    <div id="privacyModal" class="fixed inset-0 z-50 bg-amber-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
-        <div class="max-w-3xl mx-auto bg-[#fcf8f2] border-2 border-amber-900 rounded-none p-6 sm:p-8 relative shadow-[8px_8px_0px_#78350f]">
-            <button onclick="closeModal('privacyModal')" class="absolute top-6 right-6 text-amber-950 hover:text-amber-700 text-2xl font-bold">&times;</button>
-            <h2 class="text-2xl font-serif-title font-bold text-amber-950 mb-1">Full Privacy Policy</h2>
-            <p class="text-xs text-amber-800 pb-4 border-b border-amber-300 mb-6">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
-            <div class="space-y-4 text-stone-800 text-sm leading-relaxed">
-                <p>Orange Glen High School Football Booster Club ("we," "our," or "us") manages <code>oghsfbc.bond</code>. We are dedicated to respecting and protecting the personal privacy of all student-athletes, parents, volunteers, donors, and visitors.</p>
-                <h3 class="text-lg font-serif-title font-bold text-amber-950 pt-2">1. Information Collection</h3>
-                <p>We collect information voluntarily submitted when contacting our board, registering for team events, purchasing gear, or submitting sponsorship forms. Collected data includes full name, phone number, email address (e.g., <code>query@oghsfbc.bond</code>), physical mailing address, and student grade level.</p>
-                <h3 class="text-lg font-serif-title font-bold text-amber-950 pt-2">2. Usage of Personal Data</h3>
-                <p>Your details are used solely to conduct official booster club activities, organize volunteer shifts, process gear sponsorships, distribute schedule updates, and maintain non-profit governance compliance.</p>
-                <h3 class="text-lg font-serif-title font-bold text-amber-950 pt-2">3. Non-Disclosure Commitment</h3>
-                <p><strong>We do not sell, rent, trade, or transfer personal data to third-party commercial vendors.</strong> Data is accessed exclusively by authorized booster board members for non-profit operations.</p>
+    <!-- MODAL 1: FULL UNABRIDGED PRIVACY POLICY -->
+    <div id="privacyModal" class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
+        <div class="max-w-3xl mx-auto bg-[#f7f4ee] border-2 border-amber-950 p-6 sm:p-8 relative shadow-[8px_8px_0px_#451a03]">
+            <button onclick="closeModal('privacyModal')" class="absolute top-6 right-6 text-stone-900 hover:text-amber-800 text-2xl font-bold">&times;</button>
+            <h2 class="text-2xl font-serif-title font-bold text-stone-900 mb-1">Full Privacy Policy</h2>
+            <p class="text-xs text-amber-900 pb-4 border-b border-amber-300 mb-6 font-bold">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
+            <div class="space-y-4 text-stone-800 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
+                <p><strong>Effective Date:</strong> January 1, 2026</p>
+                <p>Orange Glen High School Football Booster Club ("we," "our," or "us") manages and operates the website located at <code>oghsfbc.bond</code>. We are dedicated to respecting and protecting the personal privacy of all student-athletes, parents, volunteers, donors, alumni, and website visitors.</p>
+                
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">1. Scope and Applicability</h3>
+                <p>This Privacy Policy governs all personal data collected through <code>oghsfbc.bond</code>, official email correspondence sent to <code>query@oghsfbc.bond</code>, digital inquiry forms, donation submissions, and booster club event registrations.</p>
+                
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">2. Information We Collect</h3>
+                <p>We collect information voluntarily provided by users when engaging with our organization, including:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Contact Details: Full name, phone number, physical street address, and email address.</li>
+                    <li>Student Program Data: Student-athlete name, academic grade level, gear/size specifications, and athletic team division (Varsity, JV, Freshman).</li>
+                    <li>Financial & Contribution Records: Transaction receipts, banner sponsorship details, and gear grants (payment processing is handled via secure PCI-compliant third-party providers; full credit card credentials are never stored on our servers).</li>
+                </ul>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">3. How We Use Collected Data</h3>
+                <p>Data collected by the Booster Club is strictly utilized for core operational and non-profit administration tasks, including:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Coordinating player safety equipment grants and gear sizing.</li>
+                    <li>Organizing pre-game nutritional meals and travel logistics.</li>
+                    <li>Distributing game schedules, volunteer duty sign-ups, and booster meeting notices.</li>
+                    <li>Fulfilling legal reporting requirements as a non-profit organization (EIN: 81-2112629).</li>
+                </ul>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">4. Protection of Student Minors</h3>
+                <p>Protecting student-athlete privacy is a primary operational mandate. No personal contact details, home addresses, or private academic data of high school minors are ever published publicly. Media photographs are published exclusively in accordance with Escondido Union High School District guidelines and parental authorization protocols.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">5. Strict Non-Disclosure & Third-Party Sharing Guarantee</h3>
+                <p><strong>We do not sell, rent, trade, lease, or monetize personal information under any circumstances.</strong> Personal data is never disclosed to commercial advertising networks or data brokers. Data is accessed exclusively by authorized booster board members for direct non-profit operations.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">6. Data Retention & Access Rights</h3>
+                <p>Users may request to inspect, update, or permanently delete their contact records from our mailing lists at any time by sending a written notice to our official administrative address or email.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">7. Contact Information</h3>
+                <p>For privacy inquiries, records requests, or formal communications regarding this policy, write to us at:<br>
+                <strong>ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB</strong><br>
+                151 E Pennsylvania Ave, Escondido, CA 92025<br>
+                Email: <a href="mailto:query@oghsfbc.bond" class="text-amber-900 underline font-bold">query@oghsfbc.bond</a></p>
             </div>
         </div>
     </div>
 
-    <!-- MODAL 2: TERMS OF USE -->
-    <div id="termsModal" class="fixed inset-0 z-50 bg-amber-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
-        <div class="max-w-3xl mx-auto bg-[#fcf8f2] border-2 border-amber-900 rounded-none p-6 sm:p-8 relative shadow-[8px_8px_0px_#78350f]">
-            <button onclick="closeModal('termsModal')" class="absolute top-6 right-6 text-amber-950 hover:text-amber-700 text-2xl font-bold">&times;</button>
-            <h2 class="text-2xl font-serif-title font-bold text-amber-950 mb-1">Terms of Use</h2>
-            <p class="text-xs text-amber-800 pb-4 border-b border-amber-300 mb-6">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
-            <div class="space-y-4 text-stone-800 text-sm leading-relaxed">
-                <p>Welcome to <code>oghsfbc.bond</code>. By accessing or using this site, you agree to these Terms of Use and all applicable federal and state regulations.</p>
-                <h3 class="text-lg font-serif-title font-bold text-amber-950 pt-2">1. Non-Profit Purpose</h3>
-                <p>Orange Glen High School Football Booster Club is a non-profit organization (EIN: 81-2112629). This site exists exclusively to support high school football operations, athletic funding, and community involvement in Escondido, CA.</p>
+    <!-- MODAL 2: FULL UNABRIDGED TERMS OF USE -->
+    <div id="termsModal" class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
+        <div class="max-w-3xl mx-auto bg-[#f7f4ee] border-2 border-amber-950 p-6 sm:p-8 relative shadow-[8px_8px_0px_#451a03]">
+            <button onclick="closeModal('termsModal')" class="absolute top-6 right-6 text-stone-900 hover:text-amber-800 text-2xl font-bold">&times;</button>
+            <h2 class="text-2xl font-serif-title font-bold text-stone-900 mb-1">Terms of Use</h2>
+            <p class="text-xs text-amber-900 pb-4 border-b border-amber-300 mb-6 font-bold">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
+            <div class="space-y-4 text-stone-800 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
+                <p><strong>Effective Date:</strong> January 1, 2026</p>
+                <p>Welcome to <code>oghsfbc.bond</code>. By accessing, browsing, or using this website, you acknowledge that you have read, understood, and agreed to be bound by these Terms of Use and all applicable state and federal laws.</p>
+                
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">1. Non-Profit Governance & Purpose</h3>
+                <p>This website is owned and operated by the <strong>Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629), a non-profit volunteer association based in Escondido, California. The sole purpose of this website is to provide community information, program verification, volunteer coordination, and athletic funding support for Patriot football student-athletes.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">2. Acceptable Site Use</h3>
+                <p>Users agree to utilize <code>oghsfbc.bond</code> strictly for lawful non-profit purposes. Prohibited activities include:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Harvesting organization email addresses (including <code>query@oghsfbc.bond</code>) for unsolicited commercial spam or automated scripts.</li>
+                    <li>Attempting unauthorized server access, reverse engineering, or disrupting website performance.</li>
+                    <li>Misrepresenting affiliation with the Booster Club, coaches, or school administration.</li>
+                </ul>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">3. Intellectual Property Rights</h3>
+                <p>All content published on <code>oghsfbc.bond</code>—including trademarks, graphics, logos, written text, program descriptions, and code—is protected by copyright laws and remains the property of Orange Glen High School Football Booster Club. Unauthorized duplication or commercial distribution is prohibited.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">4. Disclaimer of Warranties & Limitation of Liability</h3>
+                <p>Information on this site is provided on an "as is" and "as available" basis. While we strive to maintain complete accuracy, the Booster Club makes no warranties regarding uninterrupted access or delay-free operations. Under no circumstances shall the Booster Club or its volunteer board officers be liable for indirect damages arising from website usage.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">5. Governing Law</h3>
+                <p>These terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law principles.</p>
             </div>
         </div>
     </div>
 
-    <!-- MODAL 3: NONDISCRIMINATION POLICY -->
-    <div id="nondiscrimModal" class="fixed inset-0 z-50 bg-amber-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
-        <div class="max-w-3xl mx-auto bg-[#fcf8f2] border-2 border-amber-900 rounded-none p-6 sm:p-8 relative shadow-[8px_8px_0px_#78350f]">
-            <button onclick="closeModal('nondiscrimModal')" class="absolute top-6 right-6 text-amber-950 hover:text-amber-700 text-2xl font-bold">&times;</button>
-            <h2 class="text-2xl font-serif-title font-bold text-amber-950 mb-1">Nondiscrimination Policy</h2>
-            <p class="text-xs text-amber-800 pb-4 border-b border-amber-300 mb-6">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
-            <div class="space-y-4 text-stone-800 text-sm leading-relaxed">
-                <p>Orange Glen High School Football Booster Club promotes equal opportunity, inclusivity, and respect for all community members.</p>
+    <!-- MODAL 3: FULL UNABRIDGED NONDISCRIMINATION POLICY -->
+    <div id="nondiscrimModal" class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-md hidden overflow-y-auto p-4 sm:p-6 md:p-10">
+        <div class="max-w-3xl mx-auto bg-[#f7f4ee] border-2 border-amber-950 p-6 sm:p-8 relative shadow-[8px_8px_0px_#451a03]">
+            <button onclick="closeModal('nondiscrimModal')" class="absolute top-6 right-6 text-stone-900 hover:text-amber-800 text-2xl font-bold">&times;</button>
+            <h2 class="text-2xl font-serif-title font-bold text-stone-900 mb-1">Nondiscrimination Policy</h2>
+            <p class="text-xs text-amber-900 pb-4 border-b border-amber-300 mb-6 font-bold">Organization: ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | Domain: oghsfbc.bond</p>
+            <div class="space-y-4 text-stone-800 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
+                <p><strong>Effective Date:</strong> January 1, 2026</p>
+                <p>Orange Glen High School Football Booster Club maintains an unwavering commitment to fostering an inclusive, equitable, and welcoming sports environment for all student-athletes, families, and community members in Escondido, CA.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">1. Statement of Nondiscrimination</h3>
+                <p>The Orange Glen High School Football Booster Club does not discriminate on the basis of race, color, national or ethnic origin, ancestry, citizenship status, religion, creed, gender, sex, sexual orientation, gender identity or expression, age, physical or mental disability, medical condition, military status, or socio-economic background in the administration of any of its athletic equipment grants, pre-game meal programs, academic stipends, or volunteer opportunities.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">2. Equal Athletic Support</h3>
+                <p>All student-athletes officially enrolled on the Orange Glen High School football rosters (Varsity, Junior Varsity, and Freshman) shall have equal access to safety equipment support, team nutritional provisions, and booster grants regardless of financial contribution capability.</p>
+
+                <h3 class="text-base font-serif-title font-bold text-stone-900 pt-2">3. Compliance & Grievance Contact</h3>
+                <p>Inquiries regarding nondiscrimination standards or concerns should be addressed directly to our board at:<br>
+                <strong>ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB</strong><br>
+                151 E Pennsylvania Ave, Escondido, CA 92025<br>
+                Email: <a href="mailto:query@oghsfbc.bond" class="text-amber-900 underline font-bold">query@oghsfbc.bond</a></p>
             </div>
         </div>
     </div>
