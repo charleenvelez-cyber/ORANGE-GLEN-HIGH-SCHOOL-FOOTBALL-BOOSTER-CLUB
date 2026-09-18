@@ -1,1 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Glen High School Football Booster Club | Supporting Student Athletes</title>
+    <meta name="description" content="Orange Glen High School Football Booster Club (EIN: 81-2112629) supports student-athletes through athletic funding, equipment, and community programs. Official domain: oghsfbc.bond.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-accent: #ea580c;
+            --light-accent: #fff7ed;
+            --secondary: #0f172a;
+            --accent-gold: #d97706;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-main);
+            background-color: var(--light-bg);
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+        /* Top Banner */
+        .top-banner {
+            background-color: var(--secondary);
+            color: #f1f5f9;
+            font-size: 0.85rem;
+            padding: 10px 5%;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .top-banner strong {
+            color: var(--primary-accent);
+        }
+        /* Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-accent));
+            color: white;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .nav-links a:hover {
+            color: var(--primary-accent);
+        }
+        .btn {
+            padding: 0.8rem 1.6rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: var(--primary-accent);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #c2410c;
+            box-shadow: 0 6px 20px rgba(194, 65, 12, 0.4);
+        }
+        .btn-outline {
+            border: 2px solid var(--primary-accent);
+            color: var(--primary-accent);
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: var(--primary-accent);
+            color: #ffffff;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 5rem 5% 6rem;
+            background: linear-gradient(180deg, var(--light-accent) 0%, #f8fafc 100%);
+        }
+        .hero-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-size: 3.2rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        .hero-text p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .hero-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .hero-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            background-color: #cbd5e1;
+        }
+        .hero-gallery img:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        /* Notice Card */
+        .notice-card {
+            max-width: 1300px;
+            margin: -2rem auto 4rem;
+            background: var(--card-bg);
+            border-left: 5px solid var(--primary-accent);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+        }
+        .notice-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-accent);
+            margin-bottom: 0.3rem;
+        }
+        /* Section Layouts */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: var(--light-accent);
+            display: block;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-body h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pillar-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        .pillar-item h4 {
+            color: var(--primary-accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Contact Section */
+        .contact-box {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-box h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .contact-detail {
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-detail span {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contact-detail strong, .contact-detail a {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: #cbd5e1;
+            padding: 5rem 5% 2rem;
+        }
+        .footer-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        .footer-brand h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+        .footer-col ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .footer-col ul li a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+        /* Modals */
+        .modal-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 3rem 1rem;
+        }
+        .modal-content {
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: var(--transition);
+        }
+        .modal-close:hover {
+            background: var(--primary-accent);
+            color: white;
+        }
+        .policy-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        .policy-content h3 {
+            font-size: 1.3rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+        .policy-content p, .policy-content ul {
+            margin-bottom: 1rem;
+        }
+        .policy-content ul {
+            padding-left: 1.5rem;
+        }
+        @media (max-width: 900px) {
+            .hero-container, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Compliance Banner -->
+    <div class="top-banner">
+        <strong>Official Notice:</strong> <code>oghsfbc.bond</code> is an officially recognized website domain operated by <strong>Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629).
+    </div>
 
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-badge">OG</div>
+                Orange Glen HS Football Booster Club
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Empowering Patriots On and Off the Field.</h1>
+                <p>Orange Glen High School Football Booster Club is a non-profit organization providing equipment, athletic opportunities, academic support, and community assistance to our student-athletes in Escondido, CA.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                    <a href="#contact" class="btn btn-outline">Get Involved</a>
+                </div>
+            </div>
+            <div class="hero-gallery">
+                <img src="https://picsum.photos/id/1058/600/400" alt="Team Sports">
+                <img src="https://picsum.photos/id/1005/600/400" alt="Community Support">
+                <img src="https://picsum.photos/id/1074/600/400" alt="Athletic Training">
+                <img src="https://picsum.photos/id/1012/600/400" alt="Patriot Pride">
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain & Verification Card -->
+    <div style="padding: 0 5%;">
+        <div class="notice-card">
+            <h3>Google Workspace for Nonprofits & Organization Verification</h3>
+            <p>
+                <strong>Orange Glen High School Football Booster Club</strong> (EIN: 81-2112629) formally confirms that <strong>oghsfbc.bond</strong> is our primary organizational website and communications domain. All official organization correspondence and Google Workspace accounts are managed under <code>query@oghsfbc.bond</code>.
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>About Our Booster Club</h2>
+            <p>Fostering team pride, athletic excellence, character development, and equal opportunity for every athlete.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <img src="https://picsum.photos/id/1015/600/400" alt="Mission">
+                <div class="card-body">
+                    <h3>Our Mission</h3>
+                    <p>To support the athletic and academic pursuits of Orange Glen High School football players by securing equipment, facility upgrades, and player development resources.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/1018/600/400" alt="Vision">
+                <div class="card-body">
+                    <h3>Our Vision</h3>
+                    <p>Building a self-sustaining athletic community where every student has access to safe, high-quality sports programs regardless of financial background.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/1043/600/400" alt="Core Values">
+                <div class="card-body">
+                    <h3>Core Values</h3>
+                    <p>Sportsmanship, academic accountability, financial integrity, community partnerships, and unwavering support for player wellness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section" style="background: #ffffff; max-width: 100%;">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <div class="section-header">
+                <h2>Our Key Support Programs</h2>
+                <p>Targeted funding and community efforts designed to elevate the Patriot football experience.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/1048/600/400" alt="Safety Equipment">
+                    <div class="card-body">
+                        <h3>Safety & Equipment Grants</h3>
+                        <p>Funding certified football helmets, protective padding, practice gear, and training tools to maximize player safety.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/1060/600/400" alt="Nutritional Assistance">
+                    <div class="card-body">
+                        <h3>Player Nutrition & Meals</h3>
+                        <p>Providing pre-game meals, hydration stations, and healthy recovery snacks to keep athletes performing at their best.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/1069/600/400" alt="Scholarship & Academics">
+                    <div class="card-body">
+                        <h3>Academic & Camp Sponsorships</h3>
+                        <p>Offering merit and need-based camp stipends, tutoring resources, and senior scholarship funds to promote higher education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Approach -->
+    <section id="approach" class="section">
+        <div class="section-header">
+            <h2>Our Operational Approach</h2>
+            <p>Ensuring transparent management, community involvement, and effective stewardship.</p>
+        </div>
+        <div class="pillars-grid">
+            <div class="pillar-item">
+                <h4>1. Volunteer Driven</h4>
+                <p>100% of booster operations are led by dedicated parents, alumni, and community supporters who donate their time.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>2. Equitable Allocation</h4>
+                <p>Ensuring resources directly benefit varsity, junior varsity, and freshman squads across all grade levels.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>3. Community Partnerships</h4>
+                <p>Teaming up with local businesses in Escondido, CA to raise sponsorships and organize fund-raising drives.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>4. Transparent Governance</h4>
+                <p>Maintaining strict compliance, open financial reporting, and compliance with non-profit oversight standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section" style="background: #ffffff; max-width: 100%;">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <div class="section-header">
+                <h2>Our Community Impact</h2>
+                <p>Direct support making a real difference for our student-athletes each season.</p>
+            </div>
+            <div class="grid-3">
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 0.5rem;">100+</h3>
+                    <p><strong>Student Athletes Supported</strong><br>Receiving gear, meals, and athletic gear yearly.</p>
+                </div>
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;">100%</h3>
+                    <p><strong>Community Committed</strong><br>All funds raised directly benefit the football program.</p>
+                </div>
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 0.5rem;">Escondido</h3>
+                    <p><strong>Local Community Pride</strong><br>Rooted in Orange Glen High School traditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Contact Orange Glen HS Football Booster Club</h2>
+            <p>Reach out to our board members for sponsorship, volunteer opportunities, or inquiries.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <div class="contact-detail">
+                    <span>Legal Entity Name</span>
+                    <strong>ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Federal Tax ID (EIN)</span>
+                    <strong>81-2112629</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Email Address</span>
+                    <a href="mailto:query@oghsfbc.bond">query@oghsfbc.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Domain</span>
+                    <a href="https://oghsfbc.bond">oghsfbc.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Mailing Address</span>
+                    <strong>151 E Pennsylvania Ave<br>Escondido, CA 92025</strong>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <h3>Send Us A Message</h3>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully to query@oghsfbc.bond!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="How can we assist or collaborate with you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>OGHS Football Booster Club</h3>
+                <p>Supporting Orange Glen High School football through community empowerment, equipment funding, and player development.</p>
+                <p><strong>EIN:</strong> 81-2112629<br><strong>Domain:</strong> oghsfbc.bond</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Our Programs</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal & Policies</h4>
+                <ul>
+                    <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                    <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
+                    <li><a onclick="openModal('nondiscrimModal')">Nondiscrimination Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <ul>
+                    <li>OGHS Football Booster Club</li>
+                    <li>151 E Pennsylvania Ave</li>
+                    <li>Escondido, CA 92025</li>
+                    <li><a href="mailto:query@oghsfbc.bond">query@oghsfbc.bond</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 Orange Glen High School Football Booster Club. All rights reserved.</div>
+            <div><code>oghsfbc.bond</code> is an official domain of Orange Glen High School Football Booster Club (EIN: 81-2112629)</div>
+        </div>
+    </footer>
+
+    <!-- POLICY MODALS -->
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Privacy Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | 
+                <strong>Domain:</strong> oghsfbc.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Orange Glen High School Football Booster Club ("we," "our," or "us") operates <code>oghsfbc.bond</code>. We respect the privacy of our visitors, donors, volunteers, and student-athlete families.</p>
+                <h3>1. Information We Collect</h3>
+                <p>We collect personal information voluntarily provided through forms, emails, or sponsorship applications, including:</p>
+                <ul>
+                    <li><strong>Contact Details:</strong> Name, email address (e.g., <code>query@oghsfbc.bond</code>), phone number, and physical address.</li>
+                    <li><strong>Volunteer & Sponsorship Info:</strong> Details submitted regarding event participation or booster membership.</li>
+                    <li><strong>Technical Logs:</strong> Non-identifying IP addresses and site navigation logs collected for security purposes.</li>
+                </ul>
+                <h3>2. How Information is Used</h3>
+                <p>Information collected is used strictly for non-profit operations, program coordination, event scheduling, and official compliance requirements.</p>
+                <h3>3. Confidentiality Guarantee</h3>
+                <p><strong>We do not sell, trade, or transfer personal information to outside third parties.</strong> Data is strictly used for official club activities.</p>
+                <h3>4. Contact Us</h3>
+                <p>
+                    <strong>Orange Glen High School Football Booster Club</strong><br>
+                    151 E Pennsylvania Ave, Escondido, CA 92025<br>
+                    Email: <a href="mailto:query@oghsfbc.bond">query@oghsfbc.bond</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Use Modal -->
+    <div id="termsModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Terms of Use</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | 
+                <strong>Domain:</strong> oghsfbc.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Welcome to <code>oghsfbc.bond</code>. By using this website, you agree to comply with these terms.</p>
+                <h3>1. Non-Profit Purpose</h3>
+                <p>Orange Glen High School Football Booster Club is a recognized non-profit organization (EIN: 81-2112629). This site provides operational, program, and booster information.</p>
+                <h3>2. Acceptable Use</h3>
+                <p>Users agree to use the website lawfully and abstain from submitting fraudulent queries or spamming organizational email addresses.</p>
+                <h3>3. Contact Information</h3>
+                <p>
+                    <strong>Orange Glen High School Football Booster Club</strong><br>
+                    151 E Pennsylvania Ave, Escondido, CA 92025<br>
+                    Email: <a href="mailto:query@oghsfbc.bond">query@oghsfbc.bond</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nondiscrimination Policy Modal -->
+    <div id="nondiscrimModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('nondiscrimModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Nondiscrimination Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> ORANGE GLEN HIGH SCHOOL FOOTBALL BOOSTER CLUB (EIN: 81-2112629) | 
+                <strong>Domain:</strong> oghsfbc.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>The Orange Glen High School Football Booster Club does not discriminate on the basis of race, color, national origin, sex, disability, or age in its programs and activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modals -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-page')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
